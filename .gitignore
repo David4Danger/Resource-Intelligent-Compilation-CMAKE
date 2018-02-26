@@ -1,0 +1,12 @@
+*.swp
+*.o
+a.out
+cpubuild
+gpubuild
+../../bin/*
+../../bin
+cmake_install.cmake
+stockModel
+CMakeCache.txt
+CMakeFiles/
+Makefile
