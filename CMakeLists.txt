@@ -1,11 +1,11 @@
 cmake_minimum_required (VERSION 2.8)
 message(STATUS "CMake version: ${CMAKE_VERSION}")
 
+set(GPU_SUPPORTED TRUE)
+if (CMAKE_VERSION VERSION_LESS "3.3")
 # Determine if the cmake version is high enough to support the -x feature.
-set(GPU_SUPPORTED FALSE)
-if (CMAKE_VERSION VERSION_LESS 3.3)
   message(STATUS "CMake version not high enough to support GPU acceleration!")
-  set(GPU_SUPPORTED TRUE)
+  set(GPU_SUPPORTED FALSE)
 endif()
 project(stockModel)
 
